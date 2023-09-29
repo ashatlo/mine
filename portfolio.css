@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+html{scroll-behavior: smooth;}
+ body {
+   margin: 0;
+   padding: 0 0 -310 0;
+   box-sizing: border-box;
+   background-color: #f7f7f7;
+   font-family:'Raleway', sans-serif;
+      }
+ ul
+     {
+       list-style: none;
+     }
+ a
+ {
+text-decoration: none;
+ }       
+button
+{
+outline: none;
+border: none;
+}
+input
+{
+outline: none;
+border: none;
+}
+.logo img
+{
+width: 70px;
+margin-left: 6px;
+}
+/*******nav******/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #f7f7f7;
+}
+nav ul{
+    display: flex;
+
+} nav ul li a{
+    font-family: 'Raleway', sans-serif;
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 17px;
+    display: flex;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 1px;
+    transition: 0.6s ease;
+
+}
+nav ul li a:hover{
+border-bottom: 2px solid black;
+box-shadow: 5px 10px 30px rgba(33, 34, 34, 0.4);
+}
+.active{
+    border-bottom: 2px solid black;
+    box-shadow: 5px 10px 30px rgba(33, 34, 34, 0.4);
+}
+/***************header*****************/
+#header{
+    width: 100%;
+    height: 768px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+
+}
+.header-heading{
+    width: 500px;
+    position: absolute;
+    left: 18%;
+    top: 50%;
+    transform: translate(-18%,-50%);
+}
+.header-heading h3{
+    font-size:xx-large;
+}
+.header-heading h1{
+font-size: 23px;
+margin:0px ;
+letter-spacing: 3px;
+}
+.header-heading p{
+    font-weight: 600;
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+}
+.header-btn{
+width: 130px;
+height: 50px;
+padding: 5px;
+margin-top: 120px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color:black;
+box-shadow: 5px 10px 30px rgba(33, 34, 34, 0.4);
+border-radius: 10px;
+color: white;
+font-size: 18px;
+font-family: 'Raleway', sans-serif;
+transition: 0.6ms ease-in-out;
+}
+.header-btn:hover{
+    background-color: rgb(233, 225, 225);
+}
+/************socials*************/
+/* Add styling for the social media icons */
+.social-links {
+    display: flex;
+    align-items: center; /* Center vertically within the navbar */
+    margin-left: auto; /* Push the social icons to the right side of the navbar */
+}
+
+.social-links a {
+    color: black; /* Color of social media icons */
+    margin: 0 10px; /* Adjust the margin to your preference */
+    text-decoration: none;
+}
+
+/* Style for social media icons (you can use Font Awesome icons) */
+.social-links i {
+    font-size: 24px;
+}
+
+/************about***************/
+#about{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    background-color:black;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    position: relative;
+   }
+   .about-img{
+    width: 50%;
+   }.about-img img{
+    width: 700px;
+   }
+   .about-txt{
+    width: 45%;
+    color: #f7f7f7;
+   }
+   .about-txt h2{
+    font-size: 2rem;
+    font-weight: 600;
+   }
+.about-txt span{
+    color: #ff9f9f;
+   }
+.about-txt p{
+    color: rgb(216, 214, 214);
+}
+@media (max-width: 1200px) {
+    #about {
+        flex-direction: column; /* Change to a column layout */
+        height: auto; /* Remove fixed height */
+        padding: 50px 5%; /* Adjust padding */
+    }
+
+    .about-img {
+        width: 100%; /* Image spans the full width */
+    }
+
+    .about-txt {
+        width: 100%; /* Text spans the full width */
+        margin-top: 20px; /* Add some space between image and text */
+        text-align: center; /* Center the text */
+    }
+}/****************Work*********/
+#work{
+    width: 100%;
+    height:auto;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0px 190px; 
+    }
+    .work-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .work-box{
+        background-color: #f7f7f7;
+        width: calc(33.33% - 40px);
+        height: 250px;
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 4px 2px 12px rgba(0, 0, 0, 0.4);
+        position: relative;
+    }
+    .work-img{
+        width: 100%;
+        height:100%;
+    }
+    .work-heading{
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .work-heading p{
+        text-align: center;
+    }
+    /******************contact*****************/
+    #contact{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+    }
+    #contact form{
+        width: 600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #contact form input,#contact form textarea{
+        width: 800px; 
+        height: 50px;
+        margin: 5px 0px;
+        padding: 10px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+    }
+    #contact form textarea{
+        height: 150px;
+    }
+#contact form button{
+    margin-bottom: 50px;
+    height: 45px;
+    background-color: #ff9f9f;
+    color:black;
+    text-transform: uppercase;
+    width: 800px;
+    border-radius: 5px;
+}
+/***********footer***********/
+.footer {
+    left: 0;
+    bottom: 0;
+    margin-top: 20px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline; /* Change to inline or inline-block */
+    margin-right: 10px; /* Optional spacing between list items */
+}
+
+.footer ul li a {
+    color: #f7f7f7;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+
+
+   
+   
