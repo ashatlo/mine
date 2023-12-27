@@ -152,6 +152,7 @@ transition: 0.6ms ease-in-out;
     width: 700px;
    }
    .about-txt{
+    margin-left: auto;
     width: 45%;
     color: #f7f7f7;
    }
